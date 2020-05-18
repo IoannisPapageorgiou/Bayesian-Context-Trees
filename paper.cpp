@@ -1,4 +1,4 @@
-//#include "stdafx.h"  // this is of Visual Studio
+//#include "stdafx.h"  // this is for Visual Studio
 #include <iostream>
 #include <string>
 #include <fstream>
