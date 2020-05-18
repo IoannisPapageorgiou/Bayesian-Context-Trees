@@ -7,4 +7,4 @@ The file "paper.cpp" contains the main function and is ready to be built and exe
 
 
 
-The header file "node.h" defines structures for representing nodes and trees in C++. The header file "Functions.h" contains all the required functions for the implementation of the main algorithms. Changes to these header files are not at all needed to in order to run the algorithms.
+The header file "node.h" defines structures for representing nodes and trees in C++. The header file "Functions.h" contains all the required functions for the implementation of the main algorithms. Changes to these header files are not at all needed in order to run the algorithms.
