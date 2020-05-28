@@ -579,7 +579,7 @@ void preproc(vector <node *> init) {   // preprocessing needed for k-bct, gives 
 
 vector<vector<double> > cartesian_prod(const vector<vector<double>>& v) { // cartesian product of vectors
 	vector<vector<double>> s = { {} };                                  // returns a matrix with all combinations
-	for (auto& u : v) {
+	for (auto& u : v) {                                               //borrowed from Qiang Kou's github page: https://gist.github.com/thirdwing/953b146ba39c5f5ff562
 		vector<vector<double>> r;
 		for (auto& x : s) {
 			for (auto y : u) {
@@ -590,7 +590,7 @@ vector<vector<double> > cartesian_prod(const vector<vector<double>>& v) { // car
 		s.swap(r);
 	}
 	return s;
-}
+}                          
 
 vector<vector<short> > cartesian_prod_int(const vector<vector<short>>& v) {   // finds cartesian product of vector of short ints
 	vector<vector<short>> s = { {} };                                       // stores in matrix
