@@ -165,7 +165,7 @@ int show_leaves(tree T) { // uses node class with contexts, returns number of le
 
 			if (T[u][v]->leaf == 1) {
 
-				cout << u << v << " node ct is ";
+				cout <<  "leaf context: ";
 				for (int m = 0; m < T[u][v]->s.size(); m++)
 				{
 					cout << T[u][v]->s[m];
