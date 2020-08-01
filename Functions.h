@@ -1062,7 +1062,7 @@ void comb_initial3(int d, vector <node *> init) {    // finds combinations from 
 
 void log_loss(vector <short> xn, int train_size) { 
 
-	//This function computes the (cumulatve) log-loss at each time-step in the test set.
+	//This function computes the (cumulative) log-loss at each time-step in the test set.
 	//The output is written in the file "log_loss.txt"
 	//The input xn here is the whole dataset and train_size is the size of the training set.
 
@@ -1091,7 +1091,7 @@ void log_loss(vector <short> xn, int train_size) {
 	long double init_ctw = ctw(T);     // Store the prior-predictive likelihood in the training set
 
 
-	//2.Then evaluate the log-loss incurred by prediction in the test set by perfoming CTW sequentially
+	//2.Then evaluate the log-loss incurred by prediction in the test set by performing CTW sequentially
 
 
 	for (int i = train_size; i < xn.size(); i++) {
@@ -1107,9 +1107,8 @@ void log_loss(vector <short> xn, int train_size) {
 
 		update(T, s, ct);              // Updates sequentially Tmax when symbol "s" follows context "ct" in xn
 
-									   // Here to perform CTW we only have to look at the D+1 contexts
-
-
+		// Here to perform CTW we only have to look at the D+1 contexts
+		
 		vector <node*> nodes_ct; //pointers to these nodes in Tmax (nodes already exist)
 
 		nodes_ct.push_back(T[0][0]);
