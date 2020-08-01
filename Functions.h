@@ -1,4 +1,4 @@
-#include "stdafx.h"
+//#include "stdafx.h"     //This is for Visual Studio
 #include <iostream>
 #include <string>
 #include <fstream>
