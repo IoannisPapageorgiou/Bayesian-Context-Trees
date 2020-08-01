@@ -41,7 +41,7 @@ int main() {
 	vector <short> xn = read(s);                   // this is the ONLY remaining thing needed to run the code for CTW, k-BCT.
 	cout << "File was read " << endl;           
 	
-	//////If sequential prediction is required instead of model selection, uncomment the next 2 lines////////////////////////////////////
+	// !!! If sequential prediction is required instead of model selection, uncomment the next 2 lines !!!  
 
 	//int train_size = 500;                       // This sets training-set size                      
 	//log_loss(xn, train_size); return 0;         // This evaluates the log-loss and writes it to file "log_loss.txt"
@@ -54,7 +54,7 @@ int main() {
 
 
 
-	//3. Find preprocessing nodes at each depth
+	//3. Find pre-processing nodes at each depth
 
 	vector <node *> init; // pointers for nodes of pre-processing stage (not needed  for root node)
 
@@ -94,7 +94,7 @@ int main() {
 	vector<double> odds(k_max, 0.0); // stores posterior odds for top-k trees
 	kbct(T, trees, init, odds);      // replace this line with "ctw_bct(T);" to run ctw and bct instead of k-bct
 
-	cout << "End of k-bct" << endl;
+	cout << endl << "End of k-BCT" << endl;
 
 }
 
