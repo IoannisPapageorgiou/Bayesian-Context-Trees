@@ -460,7 +460,7 @@ vector<short> read(string s) { //could use char
 	fin.close();
 
 
-	cout << "Size of Xn is " << xn.size() << endl;
+	cout << "Size of xn is " << xn.size() << endl;
 
 
 	return xn;
@@ -489,7 +489,7 @@ vector<short> read2(string s) { //could use char, here for m > 9, in text file: 
 	fin.close();
 
 
-	cout << "Size of Xn is " << xn.size() << endl;
+	cout << "Size of xn is " << xn.size() << endl;
 
 
 	return xn;
