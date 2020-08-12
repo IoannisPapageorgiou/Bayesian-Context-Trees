@@ -17,9 +17,9 @@ using namespace std;
 
 //IMPORTANT INPUTS                              
 
-const int m = 2; // alphabet size
+const int m = 3; // alphabet size
 const int D = 10; // max depth
-long double beta = 0.5; // prior hyper-parameter
+long double beta = 0.75; // prior hyper-parameter
 const long double alpha = pow((1.0 - beta), (1.0 / (m - 1.0)));
 const short k_max = 5; //top-k trees for k-bct algorithm
 
@@ -37,9 +37,9 @@ const short k_max = 5; //top-k trees for k-bct algorithm
 int main() {
 
 	//1. Read data xn
-	string s = "example.txt";                      // After setting the initial inputs at the top of the file,
+	string s = "example.txt";                      // After setting the initial inputs at the top of the file, 
 	vector <short> xn = read(s);                   // this is the ONLY remaining thing needed to run the code for CTW, k-BCT.
-	cout << "File was read " << endl;           
+	cout << "File was read " << endl;              // Here the vector "xn" stores the whole dataset x_{-D+1}^n. 
 	
 	// !!! If sequential prediction is required instead of model selection, uncomment the next 2 lines !!!  
 
