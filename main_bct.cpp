@@ -37,7 +37,7 @@ const short k_max = 5; //top-k trees for k-bct algorithm
 int main() {
 
 	//1. Read data xn
-	string s = "example.txt";                      // After setting the initial inputs at the top of the file, 
+	string s = "example_data.txt";                 // After setting the initial inputs at the top of the file, 
 	vector <short> xn = read(s);                   // this is the ONLY remaining thing needed to run the code for CTW, k-BCT.
 	cout << "File was read " << endl;              // Here the vector "xn" stores the whole dataset x_{-D+1}^n. 
 	
