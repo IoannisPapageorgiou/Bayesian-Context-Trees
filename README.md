@@ -1,5 +1,7 @@
 # Bayesian-Context-Trees
 
+UPDATE: We have now implemented a more user-friendly R package containins this code. Please have a look at the R package BCT, at: https://cran.r-project.org/package=BCT
+
 This repository contains a C++ implementation for the Bayesian Context Tree (BCT) framework described in the paper http://arxiv.org/abs/2007.14900. The main algorithms implemented here are CTW, BCT and k-BCT. CTW returns the prior predictive likelihood (averaged over models and parameters) as the weighted probability at the root of Tmax. BCT returns the MAP tree model, and k-BCT the top-k a-posteriori most likely models. Also, a function calculating the log-loss incurred from sequential prediction is included.
 
 
